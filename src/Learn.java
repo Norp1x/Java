@@ -1,15 +1,26 @@
+import java.util.Scanner;
+
 public class Learn {
 
     public static void main(String[] args) {
-    Test tab = new Test();
-    tab.write("Greg", "Dudek");
-    tab.write("Madeline", "Szcześniewska");
-    }
-    static class Test {
-        void write (String name, String surname){
-            System.out.println();
-            System.out.println("Name: " + name + "\nSurname: " + surname);
-            System.out.println();
-        }
+        Scanner abc = new Scanner(System.in);
+
+        System.out.println("Type your name: ");
+        String name = abc.next();
+        System.out.println("Your name is: " + name);
+        abc.close();
+
+        System.out.println("What is your age?");
+        int age = abc.nextInt();
+        System.out.println("Your age: " + age);
+        abc.close();
+
+        System.out.println("What is your Salary?");
+        double salary = abc.nextDouble();
+        System.out.println("Your age: " + salary);
+        abc.close();
+
+
+
     }
 }
